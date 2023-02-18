@@ -1,38 +1,110 @@
-.App {
+@media (min-width:600px){
+  .cv {
+    display: flex;
+  }
+  
+  .left {
+    width: 30%;
+    float: left;
+    padding: 10px;
+    
+  }
+  
+  .right {
+    width: 70%;
+    float: left;
+    padding: 10px;
+    margin-left:20px;
+  }
+
+  .separator {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 32.3%;
+    border-left: 5px solid #979797;
+    
+  }
+}
+@media (max-width:1000px){
+  .separator{
+    left:34%;
+  }
+}
+.cv {
+    
+    width: 90%;
+    margin: auto;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+.profile {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile h1 {
+  font-size: 36px;
+  margin: 20px 0 5px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profile h2 {
+  font-size: 24px;
+  margin: 5px 0 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact li {
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 0.01em 16px
+}
+
+.round-xlarge {
+  border-radius: 16px
+}
+
+.light-gray {
+  color: #000 !important;
+  background-color: #c5c3c3 !important
+}
+
+.red {
+  color: #fff !important;
+  background-color: #960000 !important
+}
+
+.fifth {
+  width:20%;
+}
+.half{
+  width:50%;
+}
+
+p{
+  font-size: 18px;
 }
